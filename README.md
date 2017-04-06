@@ -8,5 +8,5 @@ var geom = shell.modify( geometry, thickness );
 ```
 
 example:
-[shell modifier](img/screenshot.jpg)
-[shell modifier](img/screenshot2.jpg)
+![shell modifier](img/screenshot.jpg)
+![shell modifier](img/screenshot2.jpg)
