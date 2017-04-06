@@ -35,7 +35,7 @@ function init() {
     //settings
 
 	params = {
-		type: 0,
+		type: 1,
 		lastType: -1,
 		thickness : 3,
         lastThickness:-1,
