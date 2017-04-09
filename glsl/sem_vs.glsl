@@ -57,7 +57,7 @@ void main() {
     float t = time * 0.1;
 
     vec3 nt = vec3(cos( time * .1 ), sin( time * .1 ), time * .1 );
-    float d = fbm( position * .1 + nt * 2. );
+    float d = fbm( position * .01 + nt * 2. );
 
     vec3 pos = position + d;
 

@@ -70,8 +70,6 @@ function init() {
 	gui.add(params, 'source').name('view base mesh').onChange(function(){ref.visible = params.source;});
 
     params.reset();
-    // computeMesh();
-
     render();
 
 }
@@ -79,19 +77,23 @@ function init() {
 function createLightsAndMaterials(){
 
 	var l = new THREE.PointLight();
-	l.position.y = 250;
+	l.position.y = 500;
 	scene.add( l );
 
     l = new THREE.PointLight();
-    l.position.x = -125;
-    l.position.y = -250;
+    l.position.x = -250;
+    l.position.y = -500;
     scene.add( l );
 
     l = new THREE.PointLight();
-    l.position.x = 125;
-    l.position.z = 125;
+    l.position.x = 250;
+    l.position.z = 250;
     scene.add( l );
 
+    l = new THREE.PointLight();
+
+    l.position.z = -500;
+    scene.add( l );
     startTime = Date.now();
 
 	materials.shell = new THREE.ShaderMaterial({
